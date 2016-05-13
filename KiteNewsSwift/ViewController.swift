@@ -12,6 +12,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var btnLogin:UIButton!
     @IBAction func onLogin(){
+        
        btnLogin.backgroundColor=UIColor.blackColor()
     }
     override func viewDidLoad() {
