@@ -12,15 +12,24 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var btnLogin:UIButton!
+    @IBOutlet weak var tfAccount:UITextField!
+    @IBOutlet weak var tfPassword:UITextField!
+    
     @IBAction func onLogin(){
+        intoMainViewController()
+    }
+    @IBAction func onSignUp()
+    {
         
-       btnLogin.backgroundColor=UIColor.redColor()
-       createTableorSave()
-        
+        createTableorSave(tfAccount.text!,password: tfPassword.text!)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,12 +38,11 @@ class ViewController: UIViewController {
     }
 
 
-    func createTableorSave()
+    func createTableorSave(name:String,password:String)
     {
         let kiteNewsUser=BmobObject(className: "kiteNewsUser")
-        kiteNewsUser.setObject("name", forKey: "user_name")
-        kiteNewsUser.setObject("12", forKey: "age")
-        kiteNewsUser.setObject("8888", forKey: "user_password")
+        kiteNewsUser.setObject(name, forKey: "user_name")
+        kiteNewsUser.setObject(password, forKey: "user_password")
         kiteNewsUser.saveInBackgroundWithResultBlock{(isSuccessful,error) in
            if error != nil
            {
@@ -45,6 +53,20 @@ class ViewController: UIViewController {
                print("Successful")
             }
         }
+        
+    }
+    
+    func queryUserNameAndPassword()
+    {
+        let query:BmobQuery=BmobUser.query()
+        
+    }
+    
+    func intoMainViewController()
+    {
+        let myStoryBoard=self.storyboard
+        let mainViewController:UIViewController=myStoryBoard!.instantiateViewControllerWithIdentifier("main_view") as UIViewController
+        self.presentViewController(mainViewController, animated: true, completion: nil)
         
     }
 }
