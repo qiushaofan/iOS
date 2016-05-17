@@ -1,10 +1,13 @@
 PODS:
   - BmobSDK (1.7.0)
+  - D3Notice (1.1.1)
 
 DEPENDENCIES:
   - BmobSDK
+  - D3Notice
 
 SPEC CHECKSUMS:
   BmobSDK: 1a7bb2aa514e69663f5b561a5c5cc5b479b20ad2
+  D3Notice: a7d5fae7edd57ab6dddb20b8a9a13c3942e6088a
 
 COCOAPODS: 0.39.0

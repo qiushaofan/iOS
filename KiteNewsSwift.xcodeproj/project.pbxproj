@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		52FA008564E6F6A3A3EF564C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81EC024DB713F7BF28534D9F /* libPods.a */; };
+		7FEE0F644D5B3B147C87705D /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC772745ACCD104B46CA441 /* Pods.framework */; };
 		8A23C3B61CE4D48B00285655 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A23C3B51CE4D48B00285655 /* AppDelegate.swift */; };
 		8A23C3B81CE4D48B00285655 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A23C3B71CE4D48B00285655 /* ViewController.swift */; };
 		8A23C3BB1CE4D48B00285655 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A23C3B91CE4D48B00285655 /* Main.storyboard */; };
@@ -38,8 +38,8 @@
 
 /* Begin PBXFileReference section */
 		4BAF838E52AFF6E0E429BC7F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		5EC772745ACCD104B46CA441 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B9CC23143C90EDB1C12517D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		81EC024DB713F7BF28534D9F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A23C3B21CE4D48B00285655 /* KiteNewsSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KiteNewsSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A23C3B51CE4D48B00285655 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A23C3B71CE4D48B00285655 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -53,7 +53,7 @@
 		8A23C3D11CE4D48B00285655 /* KiteNewsSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KiteNewsSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A23C3D51CE4D48B00285655 /* KiteNewsSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KiteNewsSwiftUITests.swift; sourceTree = "<group>"; };
 		8A23C3D71CE4D48B00285655 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8A5D54761CE7718800440CD0 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		8A5D54761CE7718800440CD0 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		8AAEDBF01CEA1E3B008EA5CE /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		8AC4FF361CE8B1140040CE12 /* KiteNewsSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KiteNewsSwift-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,7 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52FA008564E6F6A3A3EF564C /* libPods.a in Frameworks */,
+				7FEE0F644D5B3B147C87705D /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,7 +87,7 @@
 		6FB85F635E91C78B84FBE211 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				81EC024DB713F7BF28534D9F /* libPods.a */,
+				5EC772745ACCD104B46CA441 /* Pods.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

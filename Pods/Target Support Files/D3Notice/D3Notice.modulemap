@@ -1,0 +1,6 @@
+framework module D3Notice {
+  umbrella header "D3Notice-umbrella.h"
+
+  export *
+  module * { export * }
+}

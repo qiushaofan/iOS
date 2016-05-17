@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import D3Notice.Swift
 
 class ViewController: UIViewController {
 
@@ -16,7 +16,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var tfPassword:UITextField!
     
     @IBAction func onLogin(){
-        intoMainViewController()
+        if (tfAccount.text!.isEmpty && tfPassword.text!.isEmpty)
+        {
+            
+        }
+        else
+        {
+            queryUserNameAndPassword(tfAccount.text!,ipassword:tfPassword.text!)
+        }
+        
     }
     @IBAction func onSignUp()
     {
@@ -56,16 +64,30 @@ class ViewController: UIViewController {
         
     }
     
-    func queryUserNameAndPassword()
+    func queryUserNameAndPassword(iname:String,ipassword:String)
     {
-        let query:BmobQuery=BmobUser.query()
-        
+        let query:BmobQuery=BmobQuery(className: "kiteNewsUser")
+        query.orderByAscending("createdAt")
+        query.findObjectsInBackgroundWithBlock{(array,error) in
+           for i in 0..<array.count
+           {
+            let obj:BmobObject=array[i] as! BmobObject
+            let name:String=obj.objectForKey("user_name") as! String
+            let password:String=obj.objectForKey("user_password") as! String
+               print("object name \(name),password \(password)")
+               if name == iname && password == ipassword
+               {
+                  self.intoMainViewController()
+               }
+            
+            }
+        }
     }
     
     func intoMainViewController()
     {
-        let myStoryBoard=self.storyboard
-        let mainViewController:UIViewController=myStoryBoard!.instantiateViewControllerWithIdentifier("main_view") as UIViewController
+        let myStoryBoard:UIStoryboard!=self.storyboard
+        let mainViewController:UIViewController=myStoryBoard.instantiateViewControllerWithIdentifier("main_view") as UIViewController
         self.presentViewController(mainViewController, animated: true, completion: nil)
         
     }
