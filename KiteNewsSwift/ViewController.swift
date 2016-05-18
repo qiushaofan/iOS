@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import D3Notice.Swift
 
 class ViewController: UIViewController {
 
@@ -16,9 +15,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var tfPassword:UITextField!
     
     @IBAction func onLogin(){
-        if (tfAccount.text!.isEmpty && tfPassword.text!.isEmpty)
+        if (tfAccount.text!.isEmpty || tfPassword.text!.isEmpty)
         {
-            
+            showNoticeErr("Account or Password can not be empty!")
         }
         else
         {
