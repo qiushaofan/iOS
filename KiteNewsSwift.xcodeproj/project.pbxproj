@@ -15,8 +15,11 @@
 		8A23C3CB1CE4D48B00285655 /* KiteNewsSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A23C3CA1CE4D48B00285655 /* KiteNewsSwiftTests.swift */; };
 		8A23C3D61CE4D48B00285655 /* KiteNewsSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A23C3D51CE4D48B00285655 /* KiteNewsSwiftUITests.swift */; };
 		8A5D54771CE7718800440CD0 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 8A5D54761CE7718800440CD0 /* Podfile */; };
+		8A67E1A31CEE0A0F004B99D9 /* D3Notice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A67E1A21CEE0A0F004B99D9 /* D3Notice.swift */; };
+		8A67E1A71CEE0DA2004B99D9 /* wallpaper_cat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8A67E1A41CEE0DA2004B99D9 /* wallpaper_cat.jpg */; };
+		8A67E1A81CEE0DA2004B99D9 /* wallpaper_mom.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8A67E1A51CEE0DA2004B99D9 /* wallpaper_mom.jpg */; };
+		8A67E1A91CEE0DA2004B99D9 /* wallpaper_tree.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8A67E1A61CEE0DA2004B99D9 /* wallpaper_tree.jpg */; };
 		8AAEDBF11CEA1E3B008EA5CE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAEDBF01CEA1E3B008EA5CE /* MainViewController.swift */; };
-		8AFA0B361CECB8EF00B80C57 /* D3Notice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFA0B351CECB8EF00B80C57 /* D3Notice.swift */; };
 		F89F98145B2448AD6F62F905 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 135AAD388EC06599B203E5D6 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,9 +58,12 @@
 		8A23C3D51CE4D48B00285655 /* KiteNewsSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KiteNewsSwiftUITests.swift; sourceTree = "<group>"; };
 		8A23C3D71CE4D48B00285655 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A5D54761CE7718800440CD0 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		8A67E1A21CEE0A0F004B99D9 /* D3Notice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = D3Notice.swift; path = ../Pods/D3Notice/D3Notice.swift; sourceTree = "<group>"; };
+		8A67E1A41CEE0DA2004B99D9 /* wallpaper_cat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = wallpaper_cat.jpg; path = ../../../Documents/wallpaper_cat.jpg; sourceTree = "<group>"; };
+		8A67E1A51CEE0DA2004B99D9 /* wallpaper_mom.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = wallpaper_mom.jpg; path = ../../../Documents/wallpaper_mom.jpg; sourceTree = "<group>"; };
+		8A67E1A61CEE0DA2004B99D9 /* wallpaper_tree.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = wallpaper_tree.jpg; path = ../../../Documents/wallpaper_tree.jpg; sourceTree = "<group>"; };
 		8AAEDBF01CEA1E3B008EA5CE /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		8AC4FF361CE8B1140040CE12 /* KiteNewsSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KiteNewsSwift-Bridging-Header.h"; sourceTree = "<group>"; };
-		8AFA0B351CECB8EF00B80C57 /* D3Notice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = D3Notice.swift; path = ../Pods/D3Notice/D3Notice.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,15 +135,18 @@
 		8A23C3B41CE4D48B00285655 /* KiteNewsSwift */ = {
 			isa = PBXGroup;
 			children = (
+				8A67E1A41CEE0DA2004B99D9 /* wallpaper_cat.jpg */,
+				8A67E1A51CEE0DA2004B99D9 /* wallpaper_mom.jpg */,
+				8A67E1A61CEE0DA2004B99D9 /* wallpaper_tree.jpg */,
+				8A67E1A21CEE0A0F004B99D9 /* D3Notice.swift */,
 				8A23C3B51CE4D48B00285655 /* AppDelegate.swift */,
-				8AFA0B351CECB8EF00B80C57 /* D3Notice.swift */,
 				8A23C3B71CE4D48B00285655 /* ViewController.swift */,
 				8A23C3B91CE4D48B00285655 /* Main.storyboard */,
+				8AAEDBF01CEA1E3B008EA5CE /* MainViewController.swift */,
 				8A23C3BC1CE4D48B00285655 /* Assets.xcassets */,
 				8A23C3BE1CE4D48B00285655 /* LaunchScreen.storyboard */,
 				8A23C3C11CE4D48B00285655 /* Info.plist */,
 				8AC4FF361CE8B1140040CE12 /* KiteNewsSwift-Bridging-Header.h */,
-				8AAEDBF01CEA1E3B008EA5CE /* MainViewController.swift */,
 			);
 			path = KiteNewsSwift;
 			sourceTree = "<group>";
@@ -270,6 +279,9 @@
 				8A23C3C01CE4D48B00285655 /* LaunchScreen.storyboard in Resources */,
 				8A23C3BD1CE4D48B00285655 /* Assets.xcassets in Resources */,
 				8A5D54771CE7718800440CD0 /* Podfile in Resources */,
+				8A67E1A91CEE0DA2004B99D9 /* wallpaper_tree.jpg in Resources */,
+				8A67E1A71CEE0DA2004B99D9 /* wallpaper_cat.jpg in Resources */,
+				8A67E1A81CEE0DA2004B99D9 /* wallpaper_mom.jpg in Resources */,
 				8A23C3BB1CE4D48B00285655 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,9 +355,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A67E1A31CEE0A0F004B99D9 /* D3Notice.swift in Sources */,
 				8AAEDBF11CEA1E3B008EA5CE /* MainViewController.swift in Sources */,
 				8A23C3B81CE4D48B00285655 /* ViewController.swift in Sources */,
-				8AFA0B361CECB8EF00B80C57 /* D3Notice.swift in Sources */,
 				8A23C3B61CE4D48B00285655 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -85,7 +85,11 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods/D3Notice.framework"
+  install_framework "Pods/SDCycleScrollView.framework"
+  install_framework "Pods/SDWebImage.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods/D3Notice.framework"
+  install_framework "Pods/SDCycleScrollView.framework"
+  install_framework "Pods/SDWebImage.framework"
 fi
