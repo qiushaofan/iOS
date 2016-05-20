@@ -18,6 +18,10 @@ class MainViewController: UIViewController,SDCycleScrollViewDelegate {
         // Do any additional setup after loading the view, typically from a nib.
         let frame:CGRect! = CGRect.init(x: 0, y: 20, width: UIScreen.mainScreen().bounds.width, height: 200)
         let firstImage:UIImage! = UIImage.init(named: "wallpaper_cat.jpg")
+        
+        
+        
+        
 //        sdCycleScrollView = SDCycleScrollView.init(frame: frame, delegate: self, placeholderImage: firstImage)
         sdCycleScrollView=SDCycleScrollView.init(frame: frame, imageNamesGroup: imageArray as [AnyObject])
         

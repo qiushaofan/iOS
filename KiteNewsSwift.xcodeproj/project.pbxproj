@@ -109,6 +109,16 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		8A09829D1CEF60CA0028527E /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				8A67E1A41CEE0DA2004B99D9 /* wallpaper_cat.jpg */,
+				8A67E1A51CEE0DA2004B99D9 /* wallpaper_mom.jpg */,
+				8A67E1A61CEE0DA2004B99D9 /* wallpaper_tree.jpg */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
 		8A23C3A91CE4D48B00285655 = {
 			isa = PBXGroup;
 			children = (
@@ -135,9 +145,7 @@
 		8A23C3B41CE4D48B00285655 /* KiteNewsSwift */ = {
 			isa = PBXGroup;
 			children = (
-				8A67E1A41CEE0DA2004B99D9 /* wallpaper_cat.jpg */,
-				8A67E1A51CEE0DA2004B99D9 /* wallpaper_mom.jpg */,
-				8A67E1A61CEE0DA2004B99D9 /* wallpaper_tree.jpg */,
+				8A09829D1CEF60CA0028527E /* Resource */,
 				8A67E1A21CEE0A0F004B99D9 /* D3Notice.swift */,
 				8A23C3B51CE4D48B00285655 /* AppDelegate.swift */,
 				8A23C3B71CE4D48B00285655 /* ViewController.swift */,
