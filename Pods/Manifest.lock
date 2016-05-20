@@ -1,1 +1,21 @@
+PODS:
+  - BmobSDK (1.7.0)
+  - D3Notice (1.1.1)
+  - SDCycleScrollView (1.64):
+    - SDWebImage (~> 3.7)
+  - SDWebImage (3.7.6):
+    - SDWebImage/Core (= 3.7.6)
+  - SDWebImage/Core (3.7.6)
+
+DEPENDENCIES:
+  - BmobSDK
+  - D3Notice
+  - SDCycleScrollView (~> 1.64)
+
+SPEC CHECKSUMS:
+  BmobSDK: 1a7bb2aa514e69663f5b561a5c5cc5b479b20ad2
+  D3Notice: a7d5fae7edd57ab6dddb20b8a9a13c3942e6088a
+  SDCycleScrollView: 806fedb9342ab03b58b84442f985517b42c7cbb7
+  SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
+
 COCOAPODS: 0.39.0

@@ -3,8 +3,50 @@
 <plist version="1.0">
 <dict>
 	<key>SchemeUserState</key>
-	<dict/>
+	<dict>
+		<key>D3Notice.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SDCycleScrollView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SDWebImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict/>
+	<dict>
+		<key>70B48000F1A76A26CF3DD8F06D333ECC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7F70115485E6D35CAFCCAB9DE0021ADD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>91C6F5FBDFB031EFE1198EDDB4597487</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D3CFCFA7FA564F156878E29E1A7BCFBF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
 </dict>
 </plist>
