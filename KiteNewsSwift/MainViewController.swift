@@ -22,6 +22,7 @@ class MainViewController: UIViewController,SDCycleScrollViewDelegate {
         sdCycleScrollView=SDCycleScrollView.init(frame: frame, imageNamesGroup: imageArray as [AnyObject])
         
         self.view.addSubview(sdCycleScrollView)
+        
         //        let imageView=UIImageView(image:UIImage(named:"wallpaper_cat.jpg"))
         //        imageView.frame=CGRectMake(10,10,100,100)
         //        self.view.addSubview(imageView)
