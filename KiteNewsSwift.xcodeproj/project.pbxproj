@@ -20,6 +20,11 @@
 		8A67E1A81CEE0DA2004B99D9 /* wallpaper_mom.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8A67E1A51CEE0DA2004B99D9 /* wallpaper_mom.jpg */; };
 		8A67E1A91CEE0DA2004B99D9 /* wallpaper_tree.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8A67E1A61CEE0DA2004B99D9 /* wallpaper_tree.jpg */; };
 		8A7E19461CF19D6A0076BA4F /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7E19451CF19D6A0076BA4F /* ImageLoader.swift */; };
+		8A961F801CF350B6007F9827 /* FlowVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A961F7F1CF350B6007F9827 /* FlowVIew.swift */; };
+		8A961F821CF3527F007F9827 /* MyCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A961F811CF3527F007F9827 /* MyCollectionCell.xib */; };
+		8A961F841CF352E1007F9827 /* MyCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A961F831CF352E1007F9827 /* MyCollectionCell.swift */; };
+		8A961F881CF35805007F9827 /* MyLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A961F871CF35805007F9827 /* MyLayout.swift */; };
+		8A961F8A1CF3591B007F9827 /* LSImgZoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A961F891CF3591B007F9827 /* LSImgZoomView.swift */; };
 		8AAEDBF11CEA1E3B008EA5CE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAEDBF01CEA1E3B008EA5CE /* MainViewController.swift */; };
 		F89F98145B2448AD6F62F905 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 135AAD388EC06599B203E5D6 /* Pods.framework */; };
 /* End PBXBuildFile section */
@@ -64,6 +69,11 @@
 		8A67E1A51CEE0DA2004B99D9 /* wallpaper_mom.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = wallpaper_mom.jpg; path = ../../../Documents/wallpaper_mom.jpg; sourceTree = "<group>"; };
 		8A67E1A61CEE0DA2004B99D9 /* wallpaper_tree.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = wallpaper_tree.jpg; path = ../../../Documents/wallpaper_tree.jpg; sourceTree = "<group>"; };
 		8A7E19451CF19D6A0076BA4F /* ImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		8A961F7F1CF350B6007F9827 /* FlowVIew.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowVIew.swift; sourceTree = "<group>"; };
+		8A961F811CF3527F007F9827 /* MyCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCollectionCell.xib; sourceTree = "<group>"; };
+		8A961F831CF352E1007F9827 /* MyCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCollectionCell.swift; sourceTree = "<group>"; };
+		8A961F871CF35805007F9827 /* MyLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyLayout.swift; sourceTree = "<group>"; };
+		8A961F891CF3591B007F9827 /* LSImgZoomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSImgZoomView.swift; sourceTree = "<group>"; };
 		8AAEDBF01CEA1E3B008EA5CE /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		8AC4FF361CE8B1140040CE12 /* KiteNewsSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KiteNewsSwift-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -149,6 +159,7 @@
 			children = (
 				8A09829D1CEF60CA0028527E /* Resource */,
 				8A67E1A21CEE0A0F004B99D9 /* D3Notice.swift */,
+				8A961F871CF35805007F9827 /* MyLayout.swift */,
 				8A23C3B51CE4D48B00285655 /* AppDelegate.swift */,
 				8A23C3B71CE4D48B00285655 /* ViewController.swift */,
 				8A23C3B91CE4D48B00285655 /* Main.storyboard */,
@@ -158,6 +169,10 @@
 				8A23C3C11CE4D48B00285655 /* Info.plist */,
 				8AC4FF361CE8B1140040CE12 /* KiteNewsSwift-Bridging-Header.h */,
 				8A7E19451CF19D6A0076BA4F /* ImageLoader.swift */,
+				8A961F7F1CF350B6007F9827 /* FlowVIew.swift */,
+				8A961F891CF3591B007F9827 /* LSImgZoomView.swift */,
+				8A961F811CF3527F007F9827 /* MyCollectionCell.xib */,
+				8A961F831CF352E1007F9827 /* MyCollectionCell.swift */,
 			);
 			path = KiteNewsSwift;
 			sourceTree = "<group>";
@@ -294,6 +309,7 @@
 				8A67E1A71CEE0DA2004B99D9 /* wallpaper_cat.jpg in Resources */,
 				8A67E1A81CEE0DA2004B99D9 /* wallpaper_mom.jpg in Resources */,
 				8A23C3BB1CE4D48B00285655 /* Main.storyboard in Resources */,
+				8A961F821CF3527F007F9827 /* MyCollectionCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,9 +384,13 @@
 			files = (
 				8A67E1A31CEE0A0F004B99D9 /* D3Notice.swift in Sources */,
 				8AAEDBF11CEA1E3B008EA5CE /* MainViewController.swift in Sources */,
+				8A961F801CF350B6007F9827 /* FlowVIew.swift in Sources */,
 				8A7E19461CF19D6A0076BA4F /* ImageLoader.swift in Sources */,
+				8A961F841CF352E1007F9827 /* MyCollectionCell.swift in Sources */,
+				8A961F881CF35805007F9827 /* MyLayout.swift in Sources */,
 				8A23C3B81CE4D48B00285655 /* ViewController.swift in Sources */,
 				8A23C3B61CE4D48B00285655 /* AppDelegate.swift in Sources */,
+				8A961F8A1CF3591B007F9827 /* LSImgZoomView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

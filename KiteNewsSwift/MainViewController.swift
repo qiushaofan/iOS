@@ -66,6 +66,13 @@ class MainViewController: UIViewController,SDCycleScrollViewDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+    func intoNextViewController()
+    {
+        let myStoryBoard:UIStoryboard!=self.storyboard
+        let mainViewController:UIViewController=myStoryBoard.instantiateViewControllerWithIdentifier("main_view") as UIViewController
+        self.presentViewController(mainViewController, animated: true, completion: nil)
+        
+    }
     
 }
 

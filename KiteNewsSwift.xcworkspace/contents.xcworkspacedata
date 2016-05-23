@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:KiteNewsSwift/MyLayout.swift">
+   </FileRef>
+   <FileRef
       location = "group:KiteNewsSwift.xcodeproj">
    </FileRef>
    <FileRef
