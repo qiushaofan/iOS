@@ -94,7 +94,7 @@
         <!--Flow View-->
         <scene sceneID="h3a-2o-P9A">
             <objects>
-                <viewController id="gEf-xb-gX8" customClass="FlowView" customModule="KiteNewsSwift" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="flow_view" id="gEf-xb-gX8" customClass="FlowView" customModule="KiteNewsSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" restorationIdentifier="flow_view" id="msx-mX-IVF">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

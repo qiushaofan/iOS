@@ -12,15 +12,66 @@ class FlowView:UIViewController,UICollectionViewDelegate,UICollectionViewDataSou
                ,WaterFlayoutDelegate,LSImgZoomViewDelegate
 {
 
-    var myLayout:MyLayout?
+    var layout:MyLayout?
     var testImgArr=[Int]()
-    var myCollectionView:UICollectionView?
+    var mycollectionview:UICollectionView?
     var content_y=CGFloat()
 
     override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        getTestInfo()
+        //
+        layout = MyLayout()
+        layout!.delegate = self
+        
+        let cellNib:UINib = UINib(nibName: "MyCollectionCell", bundle: nil)
+        
+        //mycollectionview
+        mycollectionview = UICollectionView(frame: self.view.bounds, collectionViewLayout: layout!)
+        mycollectionview!.delegate = self
+        mycollectionview!.dataSource = self
+        mycollectionview!.backgroundColor = UIColor.clearColor()
+        mycollectionview!.registerNib(cellNib, forCellWithReuseIdentifier: "MyCollectionCell")
+        self.view.addSubview(mycollectionview!)
+        
+        
+        
+        //play
+        print(NSInteger.max, terminator: "")
+
         
     }
-    
+    //设置测试数据
+    func getTestInfo(){
+        
+        //
+        //在取随机14张图片 1~16 包括1 不包括16
+        testImgArr = createGenerator(13)(1,16)
+        
+        print(testImgArr, terminator: "")
+        
+        
+    }
+    //返回一个随机不重复数组
+    func createGenerator(count:Int)->(Int,Int)->[Int]{
+        
+        //http://stackoverflow.com/questions/24270693/nested-recursive-function-in-swift
+        var generator:(Int,Int)->[Int] = {_,_ in return []} // give it a no-op definition
+        var total = count
+        generator = {min,max in
+            if (total <= 0 || min>max) {
+                return []
+            }else{
+                total -= 1;
+                let random = Int(arc4random_uniform(UInt32(max-min)))
+                let mid = min + random
+                return [mid]+generator(min, mid-1)+generator(mid+1, max)
+            }
+        }
+        
+        return generator
+    }
     //WaterFlayoutDelegate
     func collectionView(collectionview: UICollectionView, layout: UICollectionViewLayout, indexPath: NSIndexPath) -> CGSize {
         //
