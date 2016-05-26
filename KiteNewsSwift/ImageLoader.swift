@@ -54,4 +54,41 @@ class ImageLoader {
         
     }
     
+    func imageForUrls(urlStrings: NSArray, completionHandler:(image: UIImage?, url: String,index: Int) -> ()) {
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), {()in
+            for i in 0..<urlStrings.count
+            {
+                let data: NSData? = self.cache.objectForKey(urlStrings[i]) as? NSData
+                
+                if let goodData = data {
+                    let image = UIImage(data: goodData)
+                    dispatch_async(dispatch_get_main_queue(), {() in
+                        completionHandler(image: image, url: urlStrings[i] as! String,index:i)
+                    })
+                    return
+                }
+                
+                let downloadTask: NSURLSessionDataTask = NSURLSession.sharedSession().dataTaskWithURL(NSURL(string: urlStrings[i] as! String)!, completionHandler: {(data: NSData?, response: NSURLResponse?, error: NSError?) -> Void in
+                    if (error != nil) {
+                        completionHandler(image: nil, url: urlStrings[i] as! String,index:i)
+                        return
+                    }
+                    
+                    if let data = data {
+                        let image = UIImage(data: data)
+                        self.cache.setObject(data, forKey: urlStrings[i])
+                        dispatch_async(dispatch_get_main_queue(), {() in
+                            completionHandler(image: image, url: urlStrings[i] as! String,index:i)
+                        })
+                        return
+                    }
+                    
+                })
+                downloadTask.resume()
+            }
+            
+        })
+        
+    }
+    
 }

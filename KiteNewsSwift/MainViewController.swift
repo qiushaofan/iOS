@@ -42,17 +42,30 @@ class MainViewController: UIViewController,SDCycleScrollViewDelegate {
         
         
         
-        ImageLoader.sharedLoader.imageForUrl(urlImageArray[0] as! String, completionHandler:{(image:UIImage?,url:String) in
-            let imageView:UIImageView!=UIImageView.init(frame: CGRect.init(x: 0, y: 0, width: UIScreen.mainScreen().bounds.width, height: 400))
+//        ImageLoader.sharedLoader.imageForUrl(urlImageArray[0] as! String, completionHandler:{(image:UIImage?,url:String) in
+//            let imageView:UIImageView!=UIImageView.init(frame: CGRect.init(x: 0, y: 0, width: UIScreen.mainScreen().bounds.width, height: 400))
+//            imageView.image=image
+//            self.scrollview.addSubview(imageView)
+//            
+//            
+//            //self.scrollview.bounces=false
+//            self.scrollview.contentSize=CGSize.init(width: 1000, height: 2000)
+//            self.scrollview.contentOffset = CGPoint(x: 0, y: 0)
+//        })
+        
+        ImageLoader.sharedLoader.imageForUrls(urlImageArray as NSArray, completionHandler:{(image:UIImage?,url:String,index:Int) in
+            let xValue:CGFloat = 400 * CGFloat(Float(index))
+            let yValue:CGFloat = 400 * CGFloat(Float(index))
+            
+            let imageView:UIImageView!=UIImageView.init(frame: CGRect.init(x: 0, y: yValue, width: UIScreen.mainScreen().bounds.width, height: 400))
             imageView.image=image
             self.scrollview.addSubview(imageView)
             
             
             //self.scrollview.bounces=false
-            self.scrollview.contentSize=CGSize.init(width: 1000, height: 2000)
+            self.scrollview.contentSize=CGSize.init(width: 1000, height: 20000)
             self.scrollview.contentOffset = CGPoint(x: 0, y: 0)
         })
-        
         
     }
     
