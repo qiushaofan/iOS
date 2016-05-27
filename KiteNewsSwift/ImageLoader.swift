@@ -65,7 +65,8 @@ class ImageLoader {
                     dispatch_async(dispatch_get_main_queue(), {() in
                         completionHandler(image: image, url: urlStrings[i] as! String,index:i)
                     })
-                    return
+                    
+                    continue
                 }
                 
                 let downloadTask: NSURLSessionDataTask = NSURLSession.sharedSession().dataTaskWithURL(NSURL(string: urlStrings[i] as! String)!, completionHandler: {(data: NSData?, response: NSURLResponse?, error: NSError?) -> Void in

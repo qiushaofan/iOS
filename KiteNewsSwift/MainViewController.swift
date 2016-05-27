@@ -36,7 +36,7 @@ class MainViewController: UIViewController,SDCycleScrollViewDelegate {
         
         sdCycleScrollView = SDCycleScrollView.init(frame: frame, imageNamesGroup: imageArray as [AnyObject])
         sdCycleScrollView2=SDCycleScrollView.init(frame: frame1, imageURLStringsGroup: urlImageArray as [AnyObject])
-        
+        sdCycleScrollView.delegate=self
         self.view.addSubview(sdCycleScrollView)
         self.view.addSubview(sdCycleScrollView2)
         
@@ -63,9 +63,11 @@ class MainViewController: UIViewController,SDCycleScrollViewDelegate {
             
             
             //self.scrollview.bounces=false
-            self.scrollview.contentSize=CGSize.init(width: 1000, height: 20000)
-            self.scrollview.contentOffset = CGPoint(x: 0, y: 0)
         })
+        
+        self.scrollview.contentSize=CGSize.init(width: UIScreen.mainScreen().bounds.width.hashValue, height: 400*urlImageArray.count)
+        self.scrollview.contentOffset = CGPoint(x: 0, y: 0)
+        
         
     }
     
@@ -82,9 +84,13 @@ class MainViewController: UIViewController,SDCycleScrollViewDelegate {
     func intoNextViewController()
     {
         let myStoryBoard:UIStoryboard!=self.storyboard
-        let mainViewController:UIViewController=myStoryBoard.instantiateViewControllerWithIdentifier("main_view") as UIViewController
+        let mainViewController:UIViewController=myStoryBoard.instantiateViewControllerWithIdentifier("flow_view") as UIViewController
         self.presentViewController(mainViewController, animated: true, completion: nil)
         
+    }
+    
+    func cycleScrollView(cycleScrollView: SDCycleScrollView!, didSelectItemAtIndex index: Int) {
+        intoNextViewController();
     }
     
 }

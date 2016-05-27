@@ -11,31 +11,52 @@ import UIKit
 class FlowView:UIViewController,UICollectionViewDelegate,UICollectionViewDataSource
                ,WaterFlayoutDelegate,LSImgZoomViewDelegate
 {
-
+    let urlImageArray:NSArray! = [
+        "http://www.henansc.com/uploadfile/2015/0210/20150210104804382.jpg",
+        
+        "http://www.henansc.com/uploadfile/2015/0212/20150212081452412.jpg",
+        
+        "http://www.henansc.com/uploadfile/2015/0212/20150212081841462.jpg",
+        
+        "http://www.henansc.com/uploadfile/2015/0210/20150210110611181.jpg",
+        
+        "http://www.henansc.com/uploadfile/2015/0210/20150210105956264.jpg"
+    ]
     var layout:MyLayout?
     var testImgArr=[Int]()
     var mycollectionview:UICollectionView?
     var content_y=CGFloat()
+    var urlImgArr=[UIImage]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        getTestInfo()
-        //
-        layout = MyLayout()
-        layout!.delegate = self
+       
         
-        let cellNib:UINib = UINib(nibName: "MyCollectionCell", bundle: nil)
+        ImageLoader.sharedLoader.imageForUrls(urlImageArray as NSArray, completionHandler: {
+            (image:UIImage?,url:String,index:Int) in
         
-        //mycollectionview
-        mycollectionview = UICollectionView(frame: self.view.bounds, collectionViewLayout: layout!)
-        mycollectionview!.delegate = self
-        mycollectionview!.dataSource = self
-        mycollectionview!.backgroundColor = UIColor.clearColor()
-        mycollectionview!.registerNib(cellNib, forCellWithReuseIdentifier: "MyCollectionCell")
-        self.view.addSubview(mycollectionview!)
-        
-        
+            self.urlImgArr.append(image!)
+            
+            if index==4
+            {
+                self.getTestInfo()
+                //
+                self.layout = MyLayout()
+                self.layout!.delegate = self
+                
+                let cellNib:UINib = UINib(nibName: "MyCollectionCell", bundle: nil)
+                
+                //mycollectionview
+                self.mycollectionview = UICollectionView(frame: self.view.bounds, collectionViewLayout: self.layout!)
+                self.mycollectionview!.delegate = self
+                self.mycollectionview!.dataSource = self
+                self.mycollectionview!.backgroundColor = UIColor.clearColor()
+                self.mycollectionview!.registerNib(cellNib, forCellWithReuseIdentifier: "MyCollectionCell")
+                self.view.addSubview(self.mycollectionview!)
+            }
+            
+        })
         
         //play
         print(NSInteger.max, terminator: "")
@@ -46,8 +67,8 @@ class FlowView:UIViewController,UICollectionViewDelegate,UICollectionViewDataSou
     func getTestInfo(){
         
         //
-        //在取随机14张图片 1~16 包括1 不包括16
-        testImgArr = createGenerator(13)(1,16)
+        //在取随机数
+        testImgArr = createGenerator(5)(0,4)
         
         print(testImgArr, terminator: "")
         
@@ -81,9 +102,9 @@ class FlowView:UIViewController,UICollectionViewDelegate,UICollectionViewDataSou
         let imgIndex = testImgArr[indexPath.row]
         
         //取出当前图片
-        let item_img = UIImage(named: NSString(format: "test_%d.png",imgIndex) as String)
-        
-        let imgsize = item_img!.size
+ //       let item_img = UIImage(named: NSString(format: "test_%d.png",imgIndex) as String)
+        let item_img = urlImgArr[imgIndex]
+        let imgsize = item_img.size
         let img_h =  (imgsize.height*item_w)/imgsize.width
         
         return CGSizeMake(item_w, img_h)
@@ -103,8 +124,9 @@ class FlowView:UIViewController,UICollectionViewDelegate,UICollectionViewDataSou
         let imgIndex = testImgArr[indexPath.row]
         
         //取出当前图片
-        let item_img = UIImage(named: NSString(format: "test_%d.png",imgIndex) as String)
+ //       let item_img = UIImage(named: NSString(format: "test_%d.png",imgIndex) as String)
         
+        let item_img = urlImgArr[imgIndex]
         cell.imageview.image = item_img
         
         return cell
