@@ -12,6 +12,9 @@ import Foundation
 
 class ImageLoader {
     
+    //NSCache对象，存储缓存数据。
+    //当缓存数据为空时，使用NSCache().setObject(任何对象,forKey:取出缓存的对应key)
+    //取缓存数据使用NSCache().objectForKey(缓存的对应key) as? NSData 可为空
     let cache = NSCache()
     
     class var sharedLoader : ImageLoader {
@@ -21,6 +24,7 @@ class ImageLoader {
         return Static.instance
     }
     
+    //completionHandler闭包回调调用方实现方法
     func imageForUrl(urlString: String, completionHandler:(image: UIImage?, url: String) -> ()) {
         //IOS开发中，队列跟线程应该是一个概念
         //dispatch_async创建异步线程处理耗时操作
