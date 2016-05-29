@@ -22,6 +22,13 @@ class ImageLoader {
     }
     
     func imageForUrl(urlString: String, completionHandler:(image: UIImage?, url: String) -> ()) {
+        //IOS开发中，队列跟线程应该是一个概念
+        //dispatch_async创建异步线程处理耗时操作
+        //dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0)创建一个新的全局队列
+        //DISPATCH_QUEUE_PRIORITY_BACKGROUND  队列优先级，还有一个高，低和默认的，最后一个单词改为DEFAULT,HIGH和LOW
+        //优先级不同，所创建的线程执行顺序也不同。
+        
+        
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), {()in
             let data: NSData? = self.cache.objectForKey(urlString) as? NSData
             
