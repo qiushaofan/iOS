@@ -22,6 +22,8 @@ class FlowView:UIViewController,UICollectionViewDelegate,UICollectionViewDataSou
         
         "http://www.henansc.com/uploadfile/2015/0210/20150210105956264.jpg"
     ]
+    
+    
     var layout:MyLayout?
     var testImgArr=[Int]()
     var mycollectionview:UICollectionView?
