@@ -142,9 +142,9 @@ class FlowView:UIViewController,UICollectionViewDelegate,UICollectionViewDataSou
         let cell = collectionView.cellForItemAtIndexPath(indexPath) as! MyCollectionCell
         cell.imageview.hidden = true
         
-        var baseframe = CGRectMake(cell.frame.origin.x, cell.frame.origin.y-content_y, cell.frame.size.width, cell.frame.size.height)
+        let baseframe = CGRectMake(cell.frame.origin.x, cell.frame.origin.y-content_y, cell.frame.size.width, cell.frame.size.height)
         
-        var zoomv = LSImgZoomView(baseframe: baseframe)
+        let zoomv = LSImgZoomView(baseframe: baseframe)
         zoomv.delegate = self
         zoomv.setCurrImg(cell.imageview.image!)
         zoomv.show()

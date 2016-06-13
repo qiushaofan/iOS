@@ -14,6 +14,7 @@
 		8A23C3C01CE4D48B00285655 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A23C3BE1CE4D48B00285655 /* LaunchScreen.storyboard */; };
 		8A23C3CB1CE4D48B00285655 /* KiteNewsSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A23C3CA1CE4D48B00285655 /* KiteNewsSwiftTests.swift */; };
 		8A23C3D61CE4D48B00285655 /* KiteNewsSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A23C3D51CE4D48B00285655 /* KiteNewsSwiftUITests.swift */; };
+		8A4FB6611D0EEB6B00290869 /* ScartchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4FB6601D0EEB6B00290869 /* ScartchView.swift */; };
 		8A5D54771CE7718800440CD0 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 8A5D54761CE7718800440CD0 /* Podfile */; };
 		8A67E1A31CEE0A0F004B99D9 /* D3Notice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A67E1A21CEE0A0F004B99D9 /* D3Notice.swift */; };
 		8A67E1A71CEE0DA2004B99D9 /* wallpaper_cat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8A67E1A41CEE0DA2004B99D9 /* wallpaper_cat.jpg */; };
@@ -78,6 +79,7 @@
 		8A23C3D11CE4D48B00285655 /* KiteNewsSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KiteNewsSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A23C3D51CE4D48B00285655 /* KiteNewsSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KiteNewsSwiftUITests.swift; sourceTree = "<group>"; };
 		8A23C3D71CE4D48B00285655 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A4FB6601D0EEB6B00290869 /* ScartchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScartchView.swift; sourceTree = "<group>"; };
 		8A5D54761CE7718800440CD0 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		8A67E1A21CEE0A0F004B99D9 /* D3Notice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = D3Notice.swift; path = ../Pods/D3Notice/D3Notice.swift; sourceTree = "<group>"; };
 		8A67E1A41CEE0DA2004B99D9 /* wallpaper_cat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = wallpaper_cat.jpg; path = ../../../Documents/wallpaper_cat.jpg; sourceTree = "<group>"; };
@@ -218,6 +220,7 @@
 				8A961F891CF3591B007F9827 /* LSImgZoomView.swift */,
 				8A961F811CF3527F007F9827 /* MyCollectionCell.xib */,
 				8A961F831CF352E1007F9827 /* MyCollectionCell.swift */,
+				8A4FB6601D0EEB6B00290869 /* ScartchView.swift */,
 			);
 			path = KiteNewsSwift;
 			sourceTree = "<group>";
@@ -449,6 +452,7 @@
 				8A961F841CF352E1007F9827 /* MyCollectionCell.swift in Sources */,
 				8A961F881CF35805007F9827 /* MyLayout.swift in Sources */,
 				8A23C3B81CE4D48B00285655 /* ViewController.swift in Sources */,
+				8A4FB6611D0EEB6B00290869 /* ScartchView.swift in Sources */,
 				8A23C3B61CE4D48B00285655 /* AppDelegate.swift in Sources */,
 				8A961F8A1CF3591B007F9827 /* LSImgZoomView.swift in Sources */,
 			);
