@@ -16,7 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        Bmob.registerWithAppKey("c5f2b49291f7c67396e543c13dc22fd7")
+        //替换
+        //Bmob.registerWithAppKey("需替换成Bmob网站上申请的ID")
         return true
     }
 

@@ -11,7 +11,7 @@ import UIKit
 class ScartchView:UIView{
 
     /* 原始图片 */
-    var soucreImage:UIImage!
+    var sourceImage:UIImage!
     
     /* 覆盖图片 */
     var coverImage:UIImage!
@@ -24,8 +24,14 @@ class ScartchView:UIView{
     var shapeLayer:CAShapeLayer!  //路径层
     var path:CGMutablePathRef!//路径层的路径
     
+    var isOpen:Bool=false
+    
     override init(frame: CGRect) {
-        super.init(frame: <#T##CGRect#>)
+        super.init(frame: frame)
+        self.sourceImageView=UIImageView.init(frame: self.bounds)
+        self.addSubview(sourceImageView)
+        
+        
         
     }
     

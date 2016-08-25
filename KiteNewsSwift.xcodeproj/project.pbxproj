@@ -14,6 +14,7 @@
 		8A23C3C01CE4D48B00285655 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A23C3BE1CE4D48B00285655 /* LaunchScreen.storyboard */; };
 		8A23C3CB1CE4D48B00285655 /* KiteNewsSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A23C3CA1CE4D48B00285655 /* KiteNewsSwiftTests.swift */; };
 		8A23C3D61CE4D48B00285655 /* KiteNewsSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A23C3D51CE4D48B00285655 /* KiteNewsSwiftUITests.swift */; };
+		8A3944A61D2AAB0500707028 /* GuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3944A51D2AAB0500707028 /* GuideViewController.swift */; };
 		8A4FB6611D0EEB6B00290869 /* ScartchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4FB6601D0EEB6B00290869 /* ScartchView.swift */; };
 		8A5D54771CE7718800440CD0 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 8A5D54761CE7718800440CD0 /* Podfile */; };
 		8A67E1A31CEE0A0F004B99D9 /* D3Notice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A67E1A21CEE0A0F004B99D9 /* D3Notice.swift */; };
@@ -37,7 +38,6 @@
 		8A8A97651CF4994300F380E0 /* test_14.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A8A97561CF4994300F380E0 /* test_14.png */; };
 		8A8A97661CF4994300F380E0 /* test_15.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A8A97571CF4994300F380E0 /* test_15.png */; };
 		8A961F801CF350B6007F9827 /* FlowVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A961F7F1CF350B6007F9827 /* FlowVIew.swift */; };
-		8A961F821CF3527F007F9827 /* MyCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A961F811CF3527F007F9827 /* MyCollectionCell.xib */; };
 		8A961F841CF352E1007F9827 /* MyCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A961F831CF352E1007F9827 /* MyCollectionCell.swift */; };
 		8A961F881CF35805007F9827 /* MyLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A961F871CF35805007F9827 /* MyLayout.swift */; };
 		8A961F8A1CF3591B007F9827 /* LSImgZoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A961F891CF3591B007F9827 /* LSImgZoomView.swift */; };
@@ -79,6 +79,7 @@
 		8A23C3D11CE4D48B00285655 /* KiteNewsSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KiteNewsSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A23C3D51CE4D48B00285655 /* KiteNewsSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KiteNewsSwiftUITests.swift; sourceTree = "<group>"; };
 		8A23C3D71CE4D48B00285655 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A3944A51D2AAB0500707028 /* GuideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideViewController.swift; sourceTree = "<group>"; };
 		8A4FB6601D0EEB6B00290869 /* ScartchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScartchView.swift; sourceTree = "<group>"; };
 		8A5D54761CE7718800440CD0 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		8A67E1A21CEE0A0F004B99D9 /* D3Notice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = D3Notice.swift; path = ../Pods/D3Notice/D3Notice.swift; sourceTree = "<group>"; };
@@ -102,7 +103,6 @@
 		8A8A97561CF4994300F380E0 /* test_14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test_14.png; sourceTree = "<group>"; };
 		8A8A97571CF4994300F380E0 /* test_15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test_15.png; sourceTree = "<group>"; };
 		8A961F7F1CF350B6007F9827 /* FlowVIew.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowVIew.swift; sourceTree = "<group>"; };
-		8A961F811CF3527F007F9827 /* MyCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCollectionCell.xib; sourceTree = "<group>"; };
 		8A961F831CF352E1007F9827 /* MyCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCollectionCell.swift; sourceTree = "<group>"; };
 		8A961F871CF35805007F9827 /* MyLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyLayout.swift; sourceTree = "<group>"; };
 		8A961F891CF3591B007F9827 /* LSImgZoomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSImgZoomView.swift; sourceTree = "<group>"; };
@@ -204,6 +204,7 @@
 		8A23C3B41CE4D48B00285655 /* KiteNewsSwift */ = {
 			isa = PBXGroup;
 			children = (
+				8A3944A41D2AA59900707028 /* ImageRoll */,
 				8A09829D1CEF60CA0028527E /* Resource */,
 				8A67E1A21CEE0A0F004B99D9 /* D3Notice.swift */,
 				8A961F871CF35805007F9827 /* MyLayout.swift */,
@@ -218,9 +219,9 @@
 				8A7E19451CF19D6A0076BA4F /* ImageLoader.swift */,
 				8A961F7F1CF350B6007F9827 /* FlowVIew.swift */,
 				8A961F891CF3591B007F9827 /* LSImgZoomView.swift */,
-				8A961F811CF3527F007F9827 /* MyCollectionCell.xib */,
 				8A961F831CF352E1007F9827 /* MyCollectionCell.swift */,
 				8A4FB6601D0EEB6B00290869 /* ScartchView.swift */,
+				8A3944A51D2AAB0500707028 /* GuideViewController.swift */,
 			);
 			path = KiteNewsSwift;
 			sourceTree = "<group>";
@@ -241,6 +242,13 @@
 				8A23C3D71CE4D48B00285655 /* Info.plist */,
 			);
 			path = KiteNewsSwiftUITests;
+			sourceTree = "<group>";
+		};
+		8A3944A41D2AA59900707028 /* ImageRoll */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ImageRoll;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -370,7 +378,6 @@
 				8A8A97621CF4994300F380E0 /* test_11.png in Resources */,
 				8A23C3BB1CE4D48B00285655 /* Main.storyboard in Resources */,
 				8A8A97591CF4994300F380E0 /* test_2.png in Resources */,
-				8A961F821CF3527F007F9827 /* MyCollectionCell.xib in Resources */,
 				8A8A97651CF4994300F380E0 /* test_14.png in Resources */,
 				8A8A97641CF4994300F380E0 /* test_13.png in Resources */,
 			);
@@ -451,6 +458,7 @@
 				8A7E19461CF19D6A0076BA4F /* ImageLoader.swift in Sources */,
 				8A961F841CF352E1007F9827 /* MyCollectionCell.swift in Sources */,
 				8A961F881CF35805007F9827 /* MyLayout.swift in Sources */,
+				8A3944A61D2AAB0500707028 /* GuideViewController.swift in Sources */,
 				8A23C3B81CE4D48B00285655 /* ViewController.swift in Sources */,
 				8A4FB6611D0EEB6B00290869 /* ScartchView.swift in Sources */,
 				8A23C3B61CE4D48B00285655 /* AppDelegate.swift in Sources */,
